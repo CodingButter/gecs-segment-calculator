@@ -16,11 +16,11 @@ const useStyles = makeStyles({
     fontSize: 14,
   },
   pos: {
-    marginBottom: 12,
+    
   },
 });
 
-export default function SimpleCard({hours,segments,startTime,EndTime}) {
+export default function SimpleCard({hours,segments}) {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
@@ -29,7 +29,7 @@ export default function SimpleCard({hours,segments,startTime,EndTime}) {
       <CardContent>
         <Grid container>
           <Grid item xs={6}>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography className={classes.title} color="textSecondary" >
           Segments worked
         </Typography>
         <Typography variant="h5" component="h2">
@@ -37,7 +37,7 @@ export default function SimpleCard({hours,segments,startTime,EndTime}) {
         </Typography>
         </Grid>
         <Grid item xs={6}>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
+        <Typography className={classes.title} color="textSecondary" >
           Hours worked
         </Typography>
         <Typography variant="h5" component="h2">

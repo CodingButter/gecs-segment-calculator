@@ -148,7 +148,7 @@ const myStyles = (theme)=>({
   timerPickerPaper:{
     padding:theme.spacing(1),
     margin:theme.spacing(1),
-    textAlign:"center"
+    textAlign:"center",
   },
   pickerGrid:{
   }
